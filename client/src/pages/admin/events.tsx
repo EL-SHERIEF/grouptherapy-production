@@ -152,8 +152,8 @@ export default function AdminEvents() {
       address: event.address || "",
       city: event.city || "",
       country: event.country || "",
-      date: event.date ? new Date(event.date).toISOString().slice(0, 16) : "",
-      endDate: event.endDate ? new Date(event.endDate).toISOString().slice(0, 16) : "",
+      date: event.date ? event.date.slice(0, 16) : "",
+endDate: event.endDate ? event.endDate.slice(0, 16) : "",
       ticketUrl: event.ticketUrl || "",
       ticketPrice: event.ticketPrice || "",
       currency: event.currency || "USD",
@@ -241,8 +241,8 @@ export default function AdminEvents() {
       address: formData.address || undefined,
       city: formData.city,
       country: formData.country,
-      date: formData.date ? new Date(formData.date).toISOString() : undefined,
-      endDate: formData.endDate ? new Date(formData.endDate).toISOString() : undefined,
+      date: formData.date || undefined,
+endDate: formData.endDate || undefined,
       ticketUrl: formData.ticketUrl || undefined,
       ticketPrice: formData.ticketPrice || undefined,
       currency: formData.currency || undefined,
@@ -259,13 +259,14 @@ export default function AdminEvents() {
     });
   };
 
-  const formatDate = (date: Date | string | null | undefined) => {
+const formatDate = (date: Date | string | null | undefined) => {
     if (!date) return "-";
     return new Date(date).toLocaleDateString("en-US", {
       weekday: "short",
       month: "short",
       day: "numeric",
       year: "numeric",
+      timeZone: "UTC",
     });
   };
 
