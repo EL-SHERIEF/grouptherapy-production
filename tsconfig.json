@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    "useDefineForClassFields": true,
+    "jsx": "react-jsx",
+
+    /* Build behavior */
+    "noEmit": true,
+    "isolatedModules": false,
+    "allowImportingTsExtensions": false,
+    "moduleDetection": "auto",
+    "resolveJsonModule": true,
+
+    /* Interop */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Strictness (balanced for Vercel) */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+
+    /* Relax these to avoid build failures */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./client/src/*"],
+      "@shared/*": ["./shared/*"]
+    }
+  },
+
+  "include": ["client/src", "api", "server", "shared"],
+  "exclude": ["node_modules", "dist"]
+}

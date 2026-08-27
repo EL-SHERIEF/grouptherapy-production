@@ -1,0 +1,49 @@
+{
+  "cachedAt": "2026-03-04T21:07:29.103Z",
+  "settingsData": {
+    "id": "4b44b3e0-1ec1-4bab-8e09-f0c2f145af8e",
+    "default_title": "GroupTherapy | Electronic Music Label",
+    "default_description": "Discover the future of electronic music with GroupTherapy. Listen to our radio, explore new releases, and connect with artists worldwide.",
+    "default_keywords": [
+      "electronic music",
+      "music label",
+      "radio",
+      "artists",
+      "releases"
+    ],
+    "og_image": "https://res.cloudinary.com/dhnsohfxf/image/upload/v1767568913/seo/dii94qb2juy2cqil9lxc.jpg",
+    "twitter_image": "https://res.cloudinary.com/dhnsohfxf/image/upload/v1767568918/seo/gajauepvipdopvwbluby.jpg",
+    "twitter_handle": "@grouptherapy",
+    "organization_schema": {
+      "url": "https://www.grouptherapyeg.com/",
+      "logo": "https://www.grouptherapyeg.com/favicon.png",
+      "name": "GroupTherapy",
+      "@type": "Organization",
+      "sameAs": []
+    },
+    "website_schema": {
+      "url": "",
+      "name": "GroupTherapy",
+      "@type": "WebSite",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    "music_group_schema": {
+      "name": "GroupTherapy",
+      "@type": "MusicGroup",
+      "genre": [
+        "Electronic",
+        "House",
+        "Techno"
+      ],
+      "foundingDate": "2020"
+    },
+    "head_scripts": null,
+    "body_scripts": null,
+    "updated_at": "2026-01-23T22:49:37.288872+00:00",
+    "created_at": "2025-12-10T17:14:06.83479+00:00"
+  }
+}
